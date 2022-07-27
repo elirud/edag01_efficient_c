@@ -1,0 +1,19 @@
+4. "C" The symbol is common.  Common symbols are uninitialized data.
+   "D" The symbol is in the initialized data section.
+   "G" The symbol is in an initialized data section for small objects.
+   "U" The symbol is undefined.
+   "T" The symbol is in the text (code) section.
+
+Optimize for size. -Os enables all -O2 optimizations except those that often increase code size.
+It also enables -finline-functions, causes the compiler to tune for code size rather than execution
+speed, and performs further optimizations designed to reduce code size.
+
+5. Improvements have been observed.
+
+6. -03 seems to introduce vector instructions. While -00 -> -02 does not.
+
+7. --fprofile-generate will log certain events that might improve performance if the
+   the outcome was known, e.g. branching, and dump this into files. These files are read on by gcc
+   when using --fprofile-use and take it into consideration when optimizing.
+
+8. 

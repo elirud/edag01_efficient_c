@@ -1,0 +1,5 @@
+6. Yes, very much so.
+7. Complaints.
+8. Yes, *** stack smashing detected ***
+9. No complaints. Undefined behaviour? Global variables allocated in big blocks?
+10. Klagar på båda, global / stack buffer overflow.

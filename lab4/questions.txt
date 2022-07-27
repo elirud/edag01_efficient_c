@@ -1,0 +1,7 @@
+6. Shows time spent, time spent in functions, it's childrens, and parents.
+7. Coverage report, what rows are run, and how many times.
+   Add information about branches taken.
+8. Total: refs
+   Load: rd
+   Store: wr
+   Very low, soooooo, no?

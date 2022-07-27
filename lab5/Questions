@@ -1,0 +1,23 @@
+9. First load: 49
+   Last load: 341
+   Cycles per iteration: 2.92
+
+10. First load: 51
+    Last load: 653
+    Cycles per iteration: 6.02
+
+    fmadd has more stalls.
+
+12. fdiv - floating divide, fsub - floating subtract
+
+13. Limited number of registers, if used multiple times -> give instruction a synonym.
+    Then let later instructions check if register has latest value, or check "synonym".
+
+    Speculative executions need rename register to avoid chaos where a speculative
+    is found ot be faulty and should be discarded, but instead did write to actual register.
+
+    Non speculative executions might still need rename registers if they are modern enough
+    for out of order excution. This to avoid WAW and WAR hazards.
+
+
+   
